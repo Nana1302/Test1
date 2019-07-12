@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    tools:context=".AddVehicle">
+
+    <ScrollView
+        android:id="@+id/scrollViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/Vehicle_No"
+        android:layout_width="260dp"
+        android:layout_height="41.5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textColorHint="#654900"
+        android:background="@drawable/custom_edit_text_bg"
+        android:hint="No Kenderaan"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/Puspakom_Expired_Date"
+        android:layout_width="260dp"
+        android:layout_height="41.5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_edit_text_bg"
+        android:hint="Puspakom Expired Date"
+        android:textColorHint="#654900"
+        android:focusable="false"
+        android:inputType="date"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/Roadtax_Expired_Date"
+        android:layout_width="260dp"
+        android:layout_height="41.5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_edit_text_bg"
+        android:hint="Roadtax Expired Date"
+        android:textColorHint="#654900"
+        android:focusable="false"
+        android:inputType="date"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:ignore="Autofill" />
+
+
+    <EditText
+        android:id="@+id/Insurance"
+        android:layout_width="260dp"
+        android:layout_height="41.5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_edit_text_bg"
+        android:hint="Insurance"
+        android:textColorHint="#654900"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/Tyre_When_Change"
+        android:layout_width="260dp"
+        android:layout_height="41.5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_edit_text_bg"
+        android:hint="Tayar Bila Tukar"
+        android:textColorHint="#654900"
+        android:focusable="false"
+        android:inputType="date"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/Tyre_Brand"
+            android:layout_width="260dp"
+            android:layout_height="41.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_edit_text_bg"
+            android:hint="Jenis Tayar"
+            android:textColorHint="#654900"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/Maintenance_Date"
+            android:layout_width="260dp"
+            android:layout_height="41.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_edit_text_bg"
+            android:hint="Maintenance Date"
+            android:textColorHint="#654900"
+            android:focusable="false"
+            android:inputType="date"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/Change_Gearbox_Date"
+            android:layout_width="260dp"
+            android:layout_height="41.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_edit_text_bg"
+            android:hint="Tukar Minyak Gearbox"
+            android:textColorHint="#654900"
+            android:datePickerMode="calendar"
+            android:focusable="false"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/Axsel"
+            android:layout_width="260dp"
+            android:layout_height="41.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_edit_text_bg"
+            android:hint="Axsel"
+            android:textColorHint="#654900"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/Tyre_Amount"
+            android:layout_width="260dp"
+            android:layout_height="41.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_edit_text_bg"
+            android:hint="Bilangan Tayar"
+            android:textColorHint="#654900"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            tools:ignore="Autofill" />
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="260dp"
+            android:layout_height="41.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            android:background="#000000"
+            android:text="Continue"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
