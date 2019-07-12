@@ -172,7 +172,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="60dp"
             android:background="#000000"
-            android:text="Continue"
+            android:text="CONTINUE"
             android:textAlignment="center"
             android:textColor="#ffffff" />
 

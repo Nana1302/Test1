@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    tools:context=".InsertTyre">
+
+    <ScrollView
+        android:id="@+id/scrollViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/Tyre1"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar1"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre2"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar2"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre3"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar3"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+
+            <EditText
+                android:id="@+id/Tyre4"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar4"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre5"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar5"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre6"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar6"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre7"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar7"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre8"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar8"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre9"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar9"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre10"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar10"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre11"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar11"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre12"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar12"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre13"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar13"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre14"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar14"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre15"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar15"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre16"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar16"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre17"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar17"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre18"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar18"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre19"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar19"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre20"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar20"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre21"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar21"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/Tyre22"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#654900"
+                android:background="@drawable/custom_edit_text_bg"
+                android:hint="Tayar22"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="260dp"
+                android:layout_height="41.5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="60dp"
+                android:background="#000000"
+                android:text="SAVE"
+                android:textAlignment="center"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
