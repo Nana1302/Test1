@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VehicleDetails">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--Toolbar Function-->
+        <!--<Switch-->
+        <!--android:id="@+id/switch5"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs_home"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:paddingEnd="15dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:tabGravity="center"
+            app:tabIndicatorColor="#EBA900"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="fixed"
+            app:tabPaddingStart="15dp"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextColor="#808080" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpage_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#E8E8E8"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbarLayout" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.constraint.ConstraintLayout>
