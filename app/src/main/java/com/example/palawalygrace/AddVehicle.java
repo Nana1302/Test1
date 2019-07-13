@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -27,6 +28,7 @@ public class AddVehicle extends AppCompatActivity {
     private EditText Gearbox;
 
     private ImageButton toolbar_button;
+    private Button continue_button;
 
     private Calendar mcalendar = Calendar.getInstance();
     private int day,month,year;
@@ -59,17 +61,28 @@ public class AddVehicle extends AppCompatActivity {
         month = mcalendar.get(Calendar.MONTH);
 
         toolbar_button = findViewById( R.id.home_button );
+        continue_button = findViewById( R.id.continue_button );
 
         // Toolbar
-        toolbar_button.setOnClickListener(new View.OnClickListener() {
+//        toolbar_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(AddVehicle.this, MainActivity.class);
+//                startActivity(intent);
+//            }
+//
+//        });
+        // End of toolbar
+
+        continue_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AddVehicle.this, MainActivity.class);
+                Intent intent = new Intent(AddVehicle.this, InsertTyre.class);
                 startActivity(intent);
             }
 
         });
-        // End of toolbar
+
     }
 
     // Date Picker

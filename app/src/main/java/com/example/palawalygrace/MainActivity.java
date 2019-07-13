@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar_button = findViewById( R.id.home_button );
         add_vehicle = findViewById( R.id.add_vehicle);
+        view_list_vehicle = findViewById( R.id.view_button );
 
         toolbar_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AddVehicle.class);
+                startActivity(intent);
+            }
+
+        });
+
+        view_list_vehicle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ListOfVehicles.class);
                 startActivity(intent);
             }
 

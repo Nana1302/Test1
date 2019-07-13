@@ -4,29 +4,26 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
-import java.util.List;
+public class ListOfVehicles extends AppCompatActivity {
 
-public class InsertTyre extends AppCompatActivity {
-
-    private Button save;
+    private ImageButton toolbar_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.insert_tyre );
+        setContentView( R.layout.list_of_vehicles );
 
-        save = findViewById( R.id.save_button );
+        toolbar_button = findViewById( R.id.home_button );
 
-        save.setOnClickListener(new View.OnClickListener() {
+        toolbar_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(InsertTyre.this, ListOfVehicles.class);
+                Intent intent = new Intent(ListOfVehicles.this, MainActivity.class);
                 startActivity(intent);
             }
 
         });
-
     }
 }
