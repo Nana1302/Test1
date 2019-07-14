@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "455186836156",
+    "firebase_url": "https://palawaly-grace.firebaseio.com",
+    "project_id": "palawaly-grace",
+    "storage_bucket": "palawaly-grace.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455186836156:android:cf4fc5d9e9613c3d",
+        "android_client_info": {
+          "package_name": "com.example.palawalygrace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455186836156-q8aq41agmee4jr91rdltqkb0m268t91p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHc1gwefx-K4_jYn1MafHX_naGLYIsatw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455186836156-q8aq41agmee4jr91rdltqkb0m268t91p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
