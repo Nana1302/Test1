@@ -2,16 +2,16 @@ package com.example.palawalygrace;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import java.util.Calendar;
-import java.util.Date;
 
 public class AddVehicle extends AppCompatActivity {
 
@@ -77,13 +77,34 @@ public class AddVehicle extends AppCompatActivity {
         continue_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String vehicle_no  = Vehicle_No.getText().toString().trim();
+                String insurance  = Insurance.getText().toString().trim();
+                String tyre_brand  = Tyre_Brand.getText().toString().trim();
+                String axsel  = Axsel.getText().toString().trim();
+                String tyre_amount  = Tyre_Amount.getText().toString().trim();
+
+                String puspakom  = Puspakom.getText().toString().trim();
+                String roadtax  = Roadtax.getText().toString().trim();
+                String tyre_change  = TyreChange.getText().toString().trim();
+                String maintenance  = Maintenance.getText().toString().trim();
+                String gearbox  = Gearbox.getText().toString().trim();
+
                 Intent intent = new Intent(AddVehicle.this, InsertTyre.class);
+                intent.putExtra("Vehicle details are inserted.", vehicle_no);
+                intent.putExtra("Vehicle details are inserted.", insurance);
+                intent.putExtra("Vehicle details are inserted.", tyre_brand);
+                intent.putExtra("Vehicle details are inserted.", axsel);
+                intent.putExtra("Vehicle details are inserted.", tyre_amount);
+
+                intent.putExtra("Vehicle details are inserted.", puspakom);
+                intent.putExtra("Vehicle details are inserted.", roadtax);
+                intent.putExtra("Vehicle details are inserted.", tyre_change);
+                intent.putExtra("Vehicle details are inserted.", maintenance);
+                intent.putExtra("Vehicle details are inserted.", gearbox);
                 startActivity(intent);
             }
 
-        });
-
-    }
+        });    }
 
     // Date Picker
     View.OnClickListener mClickListener = new View.OnClickListener() {

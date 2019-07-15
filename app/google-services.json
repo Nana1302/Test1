@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "455186836156-8465834lr6sq6h25pruvsktdqoffejpf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.palawalygrace",
+            "certificate_hash": "f3a4b2183576cd378afbd19d1a153aad52ec2384"
+          }
+        },
+        {
           "client_id": "455186836156-q8aq41agmee4jr91rdltqkb0m268t91p.apps.googleusercontent.com",
           "client_type": 3
         }
