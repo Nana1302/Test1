@@ -104,7 +104,8 @@ public class AddVehicle extends AppCompatActivity {
                 startActivity(intent);
             }
 
-        });    }
+        });
+    }
 
     // Date Picker
     View.OnClickListener mClickListener = new View.OnClickListener() {
