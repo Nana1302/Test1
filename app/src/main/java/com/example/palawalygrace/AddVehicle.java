@@ -126,7 +126,7 @@ public class AddVehicle extends AppCompatActivity {
                 vehicleDetails.setTyre_change(tyre_change);
                 vehicleDetails.setMaintenance(maintenance);
 
-                nanaDatabase.child("Vehicle Details").child(vehicleID).setValue(vehicleDetails);
+                nanaDatabase.child("List Of Vehicles").child(vehicleID).setValue(vehicleDetails);
             }
 
         });

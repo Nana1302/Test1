@@ -124,7 +124,7 @@ public class InsertTyre extends AppCompatActivity {
                 vehicleDetails.setTyre21(tyre21);
                 vehicleDetails.setTyre22(tyre22);
 
-                nanaDatabase.child("List Of Vehicles").child(vehicleID).child("List Of Tyres").setValue(vehicleDetails);
+                nanaDatabase.child(vehicleID).child("List Of Tyres").setValue(vehicleDetails);
             }
         });
     }
