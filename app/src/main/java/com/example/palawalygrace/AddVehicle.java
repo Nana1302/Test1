@@ -11,6 +11,10 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.palawalygrace.Model.VehicleDetails;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.Calendar;
 
 public class AddVehicle extends AppCompatActivity {
@@ -29,6 +33,9 @@ public class AddVehicle extends AppCompatActivity {
 
     private ImageButton toolbar_button;
     private Button continue_button;
+
+    private String vehicleID;
+    private DatabaseReference nanaDatabase;
 
     private Calendar mcalendar = Calendar.getInstance();
     private int day,month,year;
@@ -63,6 +70,9 @@ public class AddVehicle extends AppCompatActivity {
         toolbar_button = findViewById( R.id.home_button );
         continue_button = findViewById( R.id.continue_button );
 
+        nanaDatabase = FirebaseDatabase.getInstance().getReference();
+
+
         // Toolbar
 //        toolbar_button.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -90,18 +100,33 @@ public class AddVehicle extends AppCompatActivity {
                 String gearbox  = Gearbox.getText().toString().trim();
 
                 Intent intent = new Intent(AddVehicle.this, InsertTyre.class);
-                intent.putExtra("Vehicle details are inserted.", vehicle_no);
-                intent.putExtra("Vehicle details are inserted.", insurance);
-                intent.putExtra("Vehicle details are inserted.", tyre_brand);
-                intent.putExtra("Vehicle details are inserted.", axsel);
-                intent.putExtra("Vehicle details are inserted.", tyre_amount);
-
-                intent.putExtra("Vehicle details are inserted.", puspakom);
-                intent.putExtra("Vehicle details are inserted.", roadtax);
-                intent.putExtra("Vehicle details are inserted.", tyre_change);
-                intent.putExtra("Vehicle details are inserted.", maintenance);
-                intent.putExtra("Vehicle details are inserted.", gearbox);
+//                intent.putExtra("Vehicle details are inserted.", vehicle_no);
+//                intent.putExtra("Vehicle details are inserted.", insurance);
+//                intent.putExtra("Vehicle details are inserted.", tyre_brand);
+//                intent.putExtra("Vehicle details are inserted.", axsel);
+//                intent.putExtra("Vehicle details are inserted.", tyre_amount);
+//
+//                intent.putExtra("Vehicle details are inserted.", puspakom);
+//                intent.putExtra("Vehicle details are inserted.", roadtax);
+//                intent.putExtra("Vehicle details are inserted.", tyre_change);
+//                intent.putExtra("Vehicle details are inserted.", maintenance);
+//                intent.putExtra("Vehicle details are inserted.", gearbox);
                 startActivity(intent);
+
+                vehicleID = nanaDatabase.child("List Of Vehicles").push().getKey();
+
+                VehicleDetails vehicleDetails = new VehicleDetails();
+                vehicleDetails.setVehicle_no(vehicle_no);
+                vehicleDetails.setInsurance(insurance);
+                vehicleDetails.setTyre_brand(tyre_brand);
+                vehicleDetails.setAxsel(axsel);
+                vehicleDetails.setTyre_amount(tyre_amount);
+                vehicleDetails.setPuspakom(puspakom);
+                vehicleDetails.setRoadtax(roadtax);
+                vehicleDetails.setTyre_change(tyre_change);
+                vehicleDetails.setMaintenance(maintenance);
+
+                nanaDatabase.child("Vehicle Details").child(vehicleID).setValue(vehicleDetails);
             }
 
         });
